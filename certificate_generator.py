@@ -14,7 +14,7 @@ for i in name_list:
     font = ImageFont.truetype(r"merriweather.ttf", 46)
     w, h = draw.textsize(i, font)
     left = (img.width - w) / 2
-    location = (left, 320)
+    location = (left, 325)
     text_color = (33, 54, 101)
     draw.text(location, i, fill = text_color, font = font)
     img.save("certificates\\certificate_" + i + ".pdf")
